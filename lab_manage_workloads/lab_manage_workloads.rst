@@ -151,11 +151,17 @@ Role based access control offers the ability to apply fine grained permissions t
 
 #. Expand burger menu on left and select Roles from the Administration menu.
 
+   .. figure:: images/role_menu.png
+
 #. The Roles page shows the existing roles that are available on the Prism Central. These should all be System created roles that can be used, modified or cloned.
+
+   .. figure:: images/role_table.png
 
 #. Click the Create Role button at the top to begin process to create a new custom role.
 
 #. Enter Help Desk in the role name field and you can also enter a summary in the description field if desired.
+
+   .. figure:: images/create_role.png
 
 #. Expand the VM entities field on the create role screen and click on the Change hyperlink on the Set custom permissions line.
 
@@ -165,17 +171,29 @@ Role based access control offers the ability to apply fine grained permissions t
 - Clone VM
 - View VM
 
+   .. figure:: images/perms_list.png
+
 Click save and and then click save on the Role creation page.
 
 #. Now back on the Roles page, select the newly created role and from the actions menu choose Manage Assignment.
 
+   .. figure:: images/role_assign.png
+
 #. From here we will now assign the users/groups we want to entitle with these permissions and the entities to which they will apply.
+
+   .. figure:: images/assign_role.png
 
 #. Click on the New Users button to enter in users IDs or groups. Enter in the filed the devuser01 ID which is precreated in the labs AD domain.
 
+   .. figure:: images/role_assign_user.png
+
 #. Next click the new entities button to assign this role’s permissions over these entities.
 
-#. You can either assign the roles to a list of individual VMs or to category(s). Begin typing in Prism to the field after select the VM option. This will assign this role to an VM that already exists on this cluster.
+   .. figure:: images/entity1.png
+
+#. You can either assign the roles to a list of individual VMs or to category(s). Begin typing in Prism or another VM name into the field after select the VM option. This will assign this role to an VM that already exists on this cluster.
+
+   .. figure:: images/entity2.png
 
 #. You enter additional VMs or categories if desired or click Save to complete.
 
@@ -186,4 +204,5 @@ Takeaways
 +++++++++
 
 - In this lab you got to experience first hand how AHV provides a complete set of tools and actions that can be done manage the VMs in the cluster.
+- Also provided an overview of how easy it is to assign permissions and control access to resources within Prism Central. 
 - It is possible to register an ESXI cluster to Prism and be able to perform some of the basic VM management tasks right from Prism as well.
