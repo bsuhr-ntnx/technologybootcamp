@@ -143,6 +143,45 @@ Suggestions:
 
   The search hot key (a slash mark, or /) can be used from anywhere in the Prism Central UI to bring up the search function.
 
+
+Role Based Access Control (RBAC)
+................................
+
+Role based access control offers the ability to apply fine grained permissions to a user or group of users to precisely control the actions that they are allowed to take. Prism Central allows RBAC on many functions such as VM actions, reporting, Calm, self-service and others. In this lab example we will focus on the VM based RBAC controls.
+
+#. Expand burger menu on left and select Roles from the Administration menu.
+
+#. The Roles page shows the existing roles that are available on the Prism Central. These should all be System created roles that can be used, modified or cloned.
+
+#. Click the Create Role button at the top to begin process to create a new custom role.
+
+#. Enter Help Desk in the role name field and you can also enter a summary in the description field if desired.
+
+#. Expand the VM entities field on the create role screen and click on the Change hyperlink on the Set custom permissions line.
+
+#. From the list of customer VM permissions select the following items:
+
+- access Console VM
+- Clone VM
+- View VM
+
+Click save and and then click save on the Role creation page.
+
+#. Now back on the Roles page, select the newly created role and from the actions menu choose Manage Assignment.
+
+#. From here we will now assign the users/groups we want to entitle with these permissions and the entities to which they will apply.
+
+#. Click on the New Users button to enter in users IDs or groups. Enter in the filed the devuser01 ID which is precreated in the labs AD domain.
+
+#. Next click the new entities button to assign this role’s permissions over these entities.
+
+#. You can either assign the roles to a list of individual VMs or to category(s). Begin typing in Prism to the field after select the VM option. This will assign this role to an VM that already exists on this cluster.
+
+#. You enter additional VMs or categories if desired or click Save to complete.
+
+#. The role is now created and assigned and if you want to test you can logout as admin and log back into Prism Central with the assigned user ID and you will only have the assigned privileges to the VM(s) that were assigned.
+
+
 Takeaways
 +++++++++
 
